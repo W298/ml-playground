@@ -6,15 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/MultipleObstacleScene.unity
+    path: Assets/Playgrounds/MultipleObstacle/MultipleObstacleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
-    path: Assets/Scenes/RotatingObstacleScene.unity
+    path: Assets/Playgrounds/RotatingObstacle/RotatingObstacleScene.unity
     guid: 2f4d3db9adb8330418d2ff59dc3cb2f6
   - enabled: 0
-    path: Assets/Scenes/StepObstacleScene.unity
+    path: Assets/Playgrounds/StepObstacle/StepObstacleScene.unity
     guid: 6587228210ffa124bb21aaf6704b3e91
   - enabled: 1
-    path: Assets/Scenes/PredatorPreyScene.unity
+    path: Assets/Playgrounds/PredatorPrey/PredatorPreyScene.unity
     guid: 13b1942bb2e4a87488425cd52805c4eb
   m_configObjects: {}
