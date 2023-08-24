@@ -839,7 +839,7 @@ PlayerSettings:
     PS5: 
     QNX: 
     Stadia: 
-    Standalone: 
+    Standalone: ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1
     VisionOS: 
     WebGL: 
     XboxOne: 
