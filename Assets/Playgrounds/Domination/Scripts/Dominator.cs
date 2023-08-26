@@ -239,7 +239,11 @@ namespace Domination
             }
             
             // Add Reward Depending on Delta Tile Count.
-            AddReward((float)(Env.CountTile(Team) - oldCount) / Env.TotalTileCount);
+            var delta = Env.CountTile(Team) - oldCount;
+            var pen = 1f / Env.TotalTileCount;
+            delta *= 3;
+            
+            AddReward((float)delta / Env.TotalTileCount - pen);
             // SetReward((float)(Env.CountTile(Team)) / Env.TotalTileCount);
         }
         

@@ -11,9 +11,7 @@ namespace Domination
     {
         None,
         Red,
-        Yellow,
-        Purple,
-        Green
+        Yellow
     }
     
     [Serializable]
@@ -34,6 +32,8 @@ namespace Domination
     public class DominationEnv : MonoBehaviour
     {
         private TMPro.TMP_Text m_remainStepText;
+        private List<TMPro.TMP_Text> m_tileCountText = new();
+        
         private List<Dominator> m_dominatorList = new();
         private readonly Dictionary<Tuple<int, int>, Tile> m_tileContainer = new();
 
@@ -111,9 +111,15 @@ namespace Domination
 
         private void Start()
         {
-            m_remainStepText = FindObjectOfType<TMPro.TMP_Text>();
-            
             m_dominatorList = GetComponentsInChildren<Dominator>().ToList();
+            
+            var canvas = FindObjectOfType<Canvas>();
+            m_remainStepText = canvas.transform.GetChild(0).GetComponent<TMPro.TMP_Text>();
+            
+            foreach (var dominator in m_dominatorList)
+            {
+                m_tileCountText.Add(canvas.transform.GetChild((int)dominator.Team).GetComponent<TMPro.TMP_Text>());
+            }
 
             foreach (var tile in GetComponentsInChildren<Tile>())
                 m_tileContainer[new Tuple<int, int>(tile.X, tile.Z)] = tile;
@@ -130,6 +136,11 @@ namespace Domination
             }
 
             m_remainStepText.text = (MaxEnvStep - ElapsedStep).ToString();
+
+            foreach (var dominator in m_dominatorList)
+            {
+                m_tileCountText[(int)dominator.Team - 1].text = CountTile(dominator.Team).ToString();
+            }
         }
 
         private void ResetEnv()
@@ -206,11 +217,11 @@ namespace Domination
                 var percentOfTotal = (float)(CountTile(dominator.Team)) / filledTileCount;
                 if (rankDict[dominator] == 0)
                 {
-                    dominator.SetReward(percentOfTotal);
+                    dominator.AddReward(percentOfTotal);
                 }
                 else
                 {
-                    dominator.SetReward(percentOfTotal - 1);
+                    dominator.AddReward(percentOfTotal - 0.5f);
                 }
                 
                 dominator.EndEpisode();
