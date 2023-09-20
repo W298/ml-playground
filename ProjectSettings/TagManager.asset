@@ -8,6 +8,11 @@ TagManager:
   - Target
   - DestroyObstacle
   - LaserCollider
+  - Arrow
+  - Sword
+  - Shield
+  - RedTeamAgent
+  - YellowTeamAgent
   layers:
   - Default
   - TransparentFX
@@ -21,9 +26,9 @@ TagManager:
   - Target
   - Agent_Trigger
   - Laser
-  - 
-  - 
-  - 
+  - Red_Weapon
+  - Yellow_Weapon
+  - Outer_Capsule
   - 
   - 
   - 
