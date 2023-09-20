@@ -1,0 +1,3 @@
+[submodule "Assets/Playgrounds/Battle"]
+	path = Assets/Playgrounds/Battle
+	url = git@github.com:W298/ml-playground-battle.git
