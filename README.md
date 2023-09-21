@@ -1,6 +1,6 @@
 # ml-playground
 
-Test & Implement agents in various environment using unity ml-agents.  
+Train agents in various environment using unity ml-agents.  
 
 Each environment is implemented as a submodule and can be found in the sections below.  
 Policies, hyperparameters, and scripts are described in the blog post.
