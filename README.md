@@ -12,10 +12,13 @@ Policies, hyperparameters, and scripts are described in the blog post.
 <img width="500" alt="knight-battle" src="https://github.com/W298/ml-playground/assets/25034289/0a28d0d2-9623-4291-bbbc-51ecdd199152" />
 
 - Learning close combat (1 vs 1, many vs many) in limited area.
+- Also, you can play with trained agents. Beat them out!
 - Repository : [ml-playground-battle](https://github.com/W298/ml-playground-battle)
 - Detail Description : [Blog Post](https://w298.dev/posts/mlagent_09)
 
 ### Domination
+
+<img width="500" alt="domination" src="https://github.com/W298/ml-playground/assets/25034289/5534fa04-0b34-45e9-889d-df666be04c7a" />
 
 - Fill the tile with its color to win.
 - Each time the agent moves, it paints a tile with its color.
