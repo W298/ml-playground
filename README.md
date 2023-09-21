@@ -19,9 +19,24 @@ Policies, hyperparameters, and scripts are described in the blog post.
 
 ### Domination
 
-<img width="550" alt="domination" src="https://github.com/W298/ml-playground/assets/25034289/9794f233-08c3-4009-8fb4-691f1109ef33" />
+<img width="550" alt="domination" src="https://github.com/W298/ml-playground/assets/25034289/a9da4e9e-6f0f-4e68-9f24-ecf3bc9e93ce" />
 
 - **Fill the tile with its color to win.**
 - Each time the agent moves, it paints a tile with its color.
 - When the closed path is complete, all of the interior tiles are painted with its color.
 - Detail Description : [Blog Post](https://w298.dev/posts/mlagent_08)
+
+### Predator & Prey
+
+<img width="550" alt="domination" src="https://github.com/W298/ml-playground/assets/25034289/94145ae1-6098-40b1-a644-0c7f7958382e" />
+
+- Learning Predator Agent & Prey Agent with POCA
+
+### Obstacle Avoidance
+
+<img width="550" alt="domination" src="https://github.com/W298/ml-playground/assets/25034289/db666d73-2471-4752-b115-d65e842fbb29" />
+
+<img width="550" alt="domination" src="https://github.com/W298/ml-playground/assets/25034289/29d60b18-9450-4171-85ac-774c720ad9ba" />
+
+
+
