@@ -16,7 +16,7 @@ Policies, hyperparameters, and scripts are described in the blog post.
 
 ### Knight Battle
 
-<img width="550" alt="knight-battle" src="https://github.com/W298/ml-playground/assets/25034289/0a28d0d2-9623-4291-bbbc-51ecdd199152" />
+<img width="550" alt="knight-battle" src="https://github.com/W298/ml-playground/assets/25034289/92fad7df-1f50-4cb8-b24a-48d8af2c9022" />
 
 - **Train agent to do melee combat (1 vs 1, many vs many) in limited area.**
 - Learning with MA-POCA, self-play (co-op & competitive)
@@ -46,8 +46,9 @@ Policies, hyperparameters, and scripts are described in the blog post.
 
 ### Obstacle Avoidance
 
-<img width="480" alt="domination" src="https://github.com/W298/ml-playground/assets/25034289/db666d73-2471-4752-b115-d65e842fbb29" />
-<img width="400" alt="domination" src="https://github.com/W298/ml-playground/assets/25034289/29d60b18-9450-4171-85ac-774c720ad9ba" />
+<img width="300" alt="domination" src="https://github.com/W298/ml-playground/assets/25034289/db666d73-2471-4752-b115-d65e842fbb29" />
+<img width="300" alt="domination" src="https://github.com/W298/ml-playground/assets/25034289/9ef40b2b-8763-48cd-b886-f835d73595ac" />
+<img width="250" alt="domination" src="https://github.com/W298/ml-playground/assets/25034289/29d60b18-9450-4171-85ac-774c720ad9ba" />
 
 - **Train agent to avoid obstacles and reach the goal in various environments.**
 - The preview above is a snippet, the full list is at [here](https://w298.dev/posts/series/rl-obstacle-avoid)
